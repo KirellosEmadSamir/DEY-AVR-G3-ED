@@ -136,7 +136,7 @@ void H_LedBlink(u8 u8_led)
 		break;
 		case G_LED:
 		M_PinWrite(G_LED_PIN,HIGH);
-		_delay_ms(50);
+		_delay_ms(500);
 		M_PinWrite(G_LED_PIN,LOW);
 		break;
 		case B_LED:
