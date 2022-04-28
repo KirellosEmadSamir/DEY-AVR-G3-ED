@@ -30,15 +30,15 @@
     <EraseKey />
     <AsfFrameworkConfig>
       <framework-data>
-  <options />
-  <configurations />
-  <files />
-  <documentation help="" />
-  <offline-documentation help="" />
-  <dependencies>
-    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.42.0" />
-  </dependencies>
-</framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.42.0" />
+        </dependencies>
+      </framework-data>
     </AsfFrameworkConfig>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
@@ -123,6 +123,8 @@
             <Value>../MCAL/SPI</Value>
             <Value>../MCAL/I2C</Value>
             <Value>../HAL/AT24C16A</Value>
+            <Value>../HAL/ULTRA</Value>
+            <Value>../MCAL/TIMER_2</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
         <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
@@ -208,15 +210,6 @@
     <Compile Include="HAL\P_B\P_B_CFG.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="HAL\RELAY\RELAY.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="HAL\RELAY\RELAY.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="HAL\RELAY\RELAY_CFG.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="HAL\SERVO\SERVO.c">
       <SubType>compile</SubType>
     </Compile>
@@ -251,6 +244,24 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="HAL\TEMP_SENSOR\TEMP_CFG.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\ULTRA\RELAY\RELAY.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\ULTRA\RELAY\RELAY.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\ULTRA\RELAY\RELAY_CFG.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\ULTRA\ULTRASONIC.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\ULTRA\ULTRASONIC.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\ULTRA\ULTRASONIC_CFG.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="MCAL\ADC\ADC.c">
@@ -316,6 +327,15 @@
     <Compile Include="MCAL\TIMER_1\TIMER_1_CFG.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="MCAL\TIMER_2\TIMER_2.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\TIMER_2\TIMER_2.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\TIMER_2\TIMER_2_CFG.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="MCAL\UART\UART.c">
       <SubType>compile</SubType>
     </Compile>
@@ -344,17 +364,19 @@
     <Folder Include="HAL\KEY_PAD" />
     <Folder Include="HAL\DC_MOTOR" />
     <Folder Include="HAL\AT24C16A" />
+    <Folder Include="HAL\ULTRA" />
     <Folder Include="HAL\SERVO" />
     <Folder Include="HAL\STEPPER" />
     <Folder Include="HAL\TEMP_SENSOR" />
     <Folder Include="HAL\SSD" />
-    <Folder Include="HAL\RELAY" />
     <Folder Include="HAL\P_B" />
+    <Folder Include="HAL\ULTRA\RELAY\" />
     <Folder Include="MCAL" />
     <Folder Include="MCAL\DIO\" />
     <Folder Include="MCAL\EXT_INT" />
     <Folder Include="MCAL\ADC" />
     <Folder Include="MCAL\I2C" />
+    <Folder Include="MCAL\TIMER_2" />
     <Folder Include="MCAL\SPI" />
     <Folder Include="MCAL\UART" />
     <Folder Include="MCAL\WDT" />

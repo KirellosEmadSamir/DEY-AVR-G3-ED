@@ -1,5 +1,5 @@
-MCAL/TIMER_0/TIMER_0.d MCAL/TIMER_0/TIMER_0.o: ../MCAL/TIMER_0/TIMER_0.c \
- ../MCAL/TIMER_0/TIMER_0_CFG.h ../MCAL/TIMER_0/TIMER_0.h ../APP/LIB/STD.h \
+MCAL/TIMER_2/TIMER_2.d MCAL/TIMER_2/TIMER_2.o: ../MCAL/TIMER_2/TIMER_2.c \
+ ../MCAL/TIMER_2/TIMER_2_CFG.h ../MCAL/TIMER_2/TIMER_2.h ../APP/LIB/STD.h \
  ../APP/LIB/BIT_MATH.h ../MCAL/DIO/DIO.h ../MCAL/REG.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
@@ -14,9 +14,9 @@ MCAL/TIMER_0/TIMER_0.d MCAL/TIMER_0/TIMER_0.o: ../MCAL/TIMER_0/TIMER_0.c \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h
 
-../MCAL/TIMER_0/TIMER_0_CFG.h:
+../MCAL/TIMER_2/TIMER_2_CFG.h:
 
-../MCAL/TIMER_0/TIMER_0.h:
+../MCAL/TIMER_2/TIMER_2.h:
 
 ../APP/LIB/STD.h:
 

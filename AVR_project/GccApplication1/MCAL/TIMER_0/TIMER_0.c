@@ -81,6 +81,8 @@ void M_Timer0_SetCallBack(void(*ptr)(void))
 #if TIMER_0_MODE        ==    NORMAL_MODE
 ISR(TIMER0_OVF_vect)
 {
+		// to enable global int
+		CLR_BIT(SREG,7);
 	static u32 u32_static_local_counter = 0;
 	u32_static_local_counter++;
 	if(u32_static_local_counter == u32_global_no_of_ov)
@@ -89,6 +91,8 @@ ISR(TIMER0_OVF_vect)
 		u32_static_local_counter = 0;
 		TCNT0                    = 256 - u8_global_rem_ticks;
 	}
+		// to enable global int
+		SET_BIT(SREG,7);
 }
 #elif TIMER_0_MODE        ==    CTC_MODE
 ISR(TIMER0_COMP_vect)

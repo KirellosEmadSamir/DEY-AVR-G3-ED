@@ -23,7 +23,7 @@ void H_LedInit(u8 u8_led)
 		M_PinMode(B_LED_PIN,OUTPUT);
 		break;
 		case BAZER:
-		M_PinMode(B_LED_PIN,OUTPUT);
+		M_PinMode(BAZER_PIN,OUTPUT);
 		break;		
 		case Motor_LED:
 		M_PinMode(Motor_LED_PIN,OUTPUT);
